@@ -119,7 +119,7 @@ struct LevelFixedDecimal
 
     constexpr double toFloat() const { return static_cast<double>(value) / 100.0; }
     constexpr std::int64_t toInt() const { return value; }
-    constexpr std::size_t toUint() const { return static_cast<std::uint64_t>(value); }
+    constexpr std::uint64_t toUint() const { return static_cast<std::uint64_t>(value); }
 
     std::int64_t value;
 };
